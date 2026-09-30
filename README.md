@@ -7,6 +7,7 @@ Ici j'utilise un PICO PI possèdant un shield (représentation image ci-dessous)
 <img width="258" height="258" alt="image" src="https://github.com/user-attachments/assets/dd28b4e7-6121-44a0-bd8a-4ff0c186486c" />
 
 Le module Bouton est brancher sur la broche GP16 et le module LED est brancher sur la broche GP18 (représentation dans l'image ci-dessous).
+
 <img width="413" height="401" alt="image" src="https://github.com/user-attachments/assets/8da42ac3-a866-4b2e-adff-19457d622442" />
 <img width="832" height="562" alt="image" src="https://github.com/user-attachments/assets/66f3165d-3550-4c88-acef-d0518306d7ea" />
 
