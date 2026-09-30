@@ -42,9 +42,9 @@ Dans la boucle principale while True, on n'utilise aucun "utime.sleep()" long po
 
 Si on est en transition "(en_transition == True)", la LED reste allumée. Dès que les 5000 ms sont passées, la transition s'arrête et on bascule dans le mode demandé.
 Si on est en mode normal, on regarde la variable etat :
-etat == 0 : LED éteinte.
-etat == 1 : On inverse l'état de la LED toutes les 1000 ms avec ticks_diff pour avoir un clignotement lent (0.5 Hz).
-etat == 2 : On inverse l'état de la LED toutes les 250 ms pour le clignotement rapide (2Hz).
+1. etat == 0 : LED éteinte.
+2. etat == 1 : On inverse l'état de la LED toutes les 1000 ms avec ticks_diff pour avoir un clignotement lent (0.5 Hz).
+3. etat == 2 : On inverse l'état de la LED toutes les 250 ms pour le clignotement rapide (2Hz).
 
 <img width="772" height="373" alt="image" src="https://github.com/user-attachments/assets/f2df860e-ed54-44a4-97d3-377906c3a47c" />
 
