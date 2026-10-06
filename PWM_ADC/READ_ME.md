@@ -21,8 +21,20 @@ Voici le module buzzer utiliser (passif) :
 
 <img width="423" height="85" alt="image" src="https://github.com/user-attachments/assets/367bc15e-d275-463a-9a1f-e9c6e1a62d16" />
 
+
 OBJECTIFS DU PROGRAMME :
 
 1.Une mélodie (jouée sur un buzzer) est jouée en boucle indéfiniment.
 
 2.Le fait de tourner le potentiomètre modifie directement le volume de la mélodie, y compris pendant qu'une note est en train de jouer.
+
+
+ANALYSE DU PROGRAMME :
+
+Librairies utilisées :
+Import Pin, PWM, ADC depuis la bibliothèque machine et sleep depuis time.
+
+
+
+
+
