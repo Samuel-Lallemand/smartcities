@@ -4,6 +4,7 @@ Pour ce travail en MicroPython, j'utilise un Raspberry Pi Pico pour jouer une mÃ
 
 BRANCHEMENTS NÃ‰CESSAIRES :
 rappelle des broches sur Pico (Sans Shield)
+
 <img width="416" height="256" alt="image" src="https://github.com/user-attachments/assets/215034e2-52dd-4df5-ac50-39a58703059b" />
 
 
