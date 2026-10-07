@@ -37,6 +37,23 @@ Librairies utilisées :
 Import Pin, PWM, ADC depuis la bibliothèque machine et sleep depuis time.
 
 
+Les entrées / sorties :
+On initialise la broche analogique 26 (pot = ADC(Pin(26))) pour lire la position du potentiomètre.
+On initialise la broche 27 en PWM (buzzer = PWM(Pin(27))) pour pouvoir générer les fréquences sonores et ajuster le volume via le rapport cyclique (duty cycle).
 
+La fonction jouer_note(frequence, duree) :
+Au lieu d'attendre passivement la fin d'une note avec un simple sleep(), cette fonction découpe la durée de la note en petits intervalles de 0.01 seconde (10 ms).
+À chaque boucle de 10 ms :
+
+On lit la valeur analogique du potentiomètre avec pot.read_u16() (valeur entre 0 et 65535).
+
+On applique directement cette valeur au buzzer avec buzzer.duty_u16(volume).
+Cela permet de changer le volume de manière ultra-fluide et instantanée pendant la note. À la fin de la note, le volume est remis à 0 pour couper le son (buzzer.duty_u16(0)).
+
+Les notes de musique :
+Chaque note correspond à sa fréquence exacte en Hertz (par exemple D4 = 294, A4 = 440, D5 = 587).
+
+La boucle principale while True :
+On enchaîne les appels à la fonction jouer_note() pour jouer la partition musicale note par note. Une fois la séquence terminée, la boucle recommence depuis le début.
 
 
